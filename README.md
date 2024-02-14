@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import hasOwnProp from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-own-property@esm/index.mjs';
+import hasOwnProp from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-own-property@v0.2.0-esm/index.mjs';
 ```
 
 #### hasOwnProp( value, property )
@@ -120,7 +120,7 @@ bool = hasOwnProp( value, 'bap' );
 <body>
 <script type="module">
 
-import hasOwnProp from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-own-property@esm/index.mjs';
+import hasOwnProp from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-own-property@v0.2.0-esm/index.mjs';
 
 var bool = hasOwnProp( { 'a': 'b' }, 'a' );
 // returns true
