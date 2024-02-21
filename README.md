@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import hasOwnProp from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-own-property@deno/mod.js';
+import hasOwnProp from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-own-property@v0.2.1-deno/mod.js';
 ```
 
 #### hasOwnProp( value, property )
@@ -115,7 +115,7 @@ bool = hasOwnProp( value, 'bap' );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import hasOwnProp from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-own-property@deno/mod.js';
+import hasOwnProp from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-own-property@v0.2.1-deno/mod.js';
 
 var bool = hasOwnProp( { 'a': 'b' }, 'a' );
 // returns true
