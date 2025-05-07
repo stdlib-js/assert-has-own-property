@@ -2,6 +2,41 @@
 
 > Package changelog.
 
+<section class="release" id="unreleased">
+
+## Unreleased (2025-05-07)
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`c146634`](https://github.com/stdlib-js/stdlib/commit/c1466343f33692d3019f34d6ad7f29025f5a6d2c) - **docs:** use abbreviated alias _(by Athan Reines)_
+-   [`aea0a01`](https://github.com/stdlib-js/stdlib/commit/aea0a01e0c1b86a9e21e3f34df32d04e24a4cbc5) - **docs:** use consistent alias _(by Athan Reines)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 1 person contributed to this release. Thank you to this contributor:
+
+-   Athan Reines
+
+</section>
+
+<!-- /.contributors -->
+
+</section>
+
+<!-- /.release -->
+
 <section class="release" id="v0.2.2">
 
 ## 0.2.2 (2024-07-27)

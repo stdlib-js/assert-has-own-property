@@ -29,7 +29,7 @@ limitations under the License.
   <p>To join us in bringing numerical computing to the web, get started by checking us out on <a href="https://github.com/stdlib-js/stdlib">GitHub</a>, and please consider <a href="https://opencollective.com/stdlib">financially supporting stdlib</a>. We greatly appreciate your continued support!</p>
 </details>
 
-# hasOwnProperty
+# hasOwnProp
 
 [![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
@@ -59,13 +59,17 @@ To view installation and usage instructions specific to each branch build, be su
 
 ## Usage
 
+<!-- stdlib/no-redeclare -->
+
 ```javascript
 var hasOwnProp = require( '@stdlib/assert-has-own-property' );
 ```
 
 #### hasOwnProp( value, property )
 
-Returns a `boolean` indicating if a `value` has a specified `property`.
+Returns a boolean indicating if a `value` has a specified `property`.
+
+<!-- stdlib/no-redeclare -->
 
 ```javascript
 var value = {
@@ -89,6 +93,8 @@ bool = hasOwnProp( value, 'bap' );
 
 -   In contrast to the native [Object.prototype.hasOwnProperty][mdn-object-has-own-property], this function does **not** throw when provided `null` or `undefined`. Instead, the function returns `false`.
 
+    <!-- stdlib/no-redeclare -->
+
     ```javascript
     var bool = hasOwnProp( null, 'a' );
     // returns false
@@ -97,14 +103,18 @@ bool = hasOwnProp( value, 'bap' );
     // returns false
     ```
 
--   Value arguments other than `null` or `undefined` are coerced to `objects`.
+-   Value arguments other than `null` or `undefined` are coerced to objects.
+
+    <!-- stdlib/no-redeclare -->
 
     ```javascript
     var bool = hasOwnProp( 'beep', 'length' );
     // returns true
     ```
 
--   Property arguments are coerced to `strings`.
+-   Property arguments are coerced to strings.
+
+    <!-- stdlib/no-redeclare -->
 
     ```javascript
     var value = {
@@ -128,7 +138,7 @@ bool = hasOwnProp( value, 'bap' );
 
 ## Examples
 
-<!-- eslint-disable object-curly-newline -->
+<!-- eslint-disable object-curly-newline, stdlib/no-redeclare, stdlib/eol-open-bracket-spacing -->
 
 <!-- eslint no-undef: "error" -->
 
@@ -144,7 +154,7 @@ bool = hasOwnProp( { 'a': 'b' }, 'c' );
 bool = hasOwnProp( { 'a': 'b' }, null );
 // returns false
 
-bool = hasOwnProp( {}, 'hasOwnProperty' );
+bool = hasOwnProp( {}, 'hasOwnProp' );
 // returns false
 
 bool = hasOwnProp( null, 'a' );
@@ -204,7 +214,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
