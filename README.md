@@ -29,49 +29,47 @@ limitations under the License.
   <p>To join us in bringing numerical computing to the web, get started by checking us out on <a href="https://github.com/stdlib-js/stdlib">GitHub</a>, and please consider <a href="https://opencollective.com/stdlib">financially supporting stdlib</a>. We greatly appreciate your continued support!</p>
 </details>
 
-# hasOwnProperty
+# hasOwnProp
 
 [![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
 > Test if an object has a specified property.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/assert-has-own-property
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
+<!-- stdlib/no-redeclare -->
 
 ```javascript
-hasOwnProp = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-own-property@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var hasOwnProp = require( 'path/to/vendor/umd/assert-has-own-property/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-own-property@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.hasOwnProp;
-})();
-</script>
+var hasOwnProp = require( '@stdlib/assert-has-own-property' );
 ```
 
 #### hasOwnProp( value, property )
 
-Returns a `boolean` indicating if a `value` has a specified `property`.
+Returns a boolean indicating if a `value` has a specified `property`.
+
+<!-- stdlib/no-redeclare -->
 
 ```javascript
 var value = {
@@ -95,6 +93,8 @@ bool = hasOwnProp( value, 'bap' );
 
 -   In contrast to the native [Object.prototype.hasOwnProperty][mdn-object-has-own-property], this function does **not** throw when provided `null` or `undefined`. Instead, the function returns `false`.
 
+    <!-- stdlib/no-redeclare -->
+
     ```javascript
     var bool = hasOwnProp( null, 'a' );
     // returns false
@@ -103,14 +103,18 @@ bool = hasOwnProp( value, 'bap' );
     // returns false
     ```
 
--   Value arguments other than `null` or `undefined` are coerced to `objects`.
+-   Value arguments other than `null` or `undefined` are coerced to objects.
+
+    <!-- stdlib/no-redeclare -->
 
     ```javascript
     var bool = hasOwnProp( 'beep', 'length' );
     // returns true
     ```
 
--   Property arguments are coerced to `strings`.
+-   Property arguments are coerced to strings.
+
+    <!-- stdlib/no-redeclare -->
 
     ```javascript
     var value = {
@@ -134,17 +138,12 @@ bool = hasOwnProp( value, 'bap' );
 
 ## Examples
 
-<!-- eslint-disable object-curly-newline -->
+<!-- eslint-disable object-curly-newline, stdlib/no-redeclare, stdlib/eol-open-bracket-spacing -->
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-own-property@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var hasOwnProp = require( '@stdlib/assert-has-own-property' );
 
 var bool = hasOwnProp( { 'a': 'b' }, 'a' );
 // returns true
@@ -155,7 +154,7 @@ bool = hasOwnProp( { 'a': 'b' }, 'c' );
 bool = hasOwnProp( { 'a': 'b' }, null );
 // returns false
 
-bool = hasOwnProp( {}, 'hasOwnProperty' );
+bool = hasOwnProp( {}, 'hasOwnProp' );
 // returns false
 
 bool = hasOwnProp( null, 'a' );
@@ -169,11 +168,6 @@ bool = hasOwnProp( { 'null': false }, null );
 
 bool = hasOwnProp( { '[object Object]': false }, {} );
 // returns true
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -220,7 +214,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -270,7 +264,7 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/assert/has-property]: https://github.com/stdlib-js/assert-has-property/tree/umd
+[@stdlib/assert/has-property]: https://github.com/stdlib-js/assert-has-property
 
 <!-- </related-links> -->
 
