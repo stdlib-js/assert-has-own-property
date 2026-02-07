@@ -44,7 +44,7 @@ limitations under the License.
 <!-- stdlib/no-redeclare -->
 
 ```javascript
-import hasOwnProp from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-own-property@esm/index.mjs';
+import hasOwnProp from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-own-property@v0.2.3-esm/index.mjs';
 ```
 
 #### hasOwnProp( value, property )
@@ -130,7 +130,7 @@ bool = hasOwnProp( value, 'bap' );
 <body>
 <script type="module">
 
-import hasOwnProp from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-own-property@esm/index.mjs';
+import hasOwnProp from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-own-property@v0.2.3-esm/index.mjs';
 
 var bool = hasOwnProp( { 'a': 'b' }, 'a' );
 // returns true
